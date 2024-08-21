@@ -1,3 +1,5 @@
+'use client';
+
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import { Input } from '@/components/ui/input';
 import Link from 'next/link';
@@ -9,8 +11,21 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { useState } from 'react';
 
 export default function Page() {
+  const [name, setName] = useState<string>('');
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value);
+  };
+
+  const handleButtonClick = () => {
+    if (name) {
+      sessionStorage.setItem('name', name);
+    }
+  };
+
   return (
     <main className="flex flex-col items-center justify-center p-10 min-h-screen">
       <Card>
@@ -21,10 +36,13 @@ export default function Page() {
         <CardContent>
           <Input
             placeholder="Name"
-            className="mb-5"
+            value={name}
+            onChange={handleInputChange}
+            className="mb-5 rounded"
           />
           <Link href="/dashboard">
             <Button
+              onClick={handleButtonClick}
               variant="default"
               className="rounded">
               Continue
