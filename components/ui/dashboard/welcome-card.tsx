@@ -14,7 +14,7 @@ export default function WelcomeCard() {
     <Card className="h-full rounded">
       <CardHeader>
         <CardTitle>Welcome{username ? `, ${username}!` : '!'}</CardTitle>
-        <CardDescription>
+        <CardDescription className='md:text-xs lg:text-sm'>
           On this website, you can find information about me, my projects, and my skills.
         </CardDescription>
       </CardHeader>

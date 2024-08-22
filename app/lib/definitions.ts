@@ -5,5 +5,6 @@ export type Project = {
   language: string;
   model: string
   problem: string;
-  image_url: string;
+  githubLink: string;
+  exampleLink: string;
 }

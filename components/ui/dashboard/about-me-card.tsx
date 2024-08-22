@@ -15,7 +15,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 export default function AboutMeCard() {
   return (
-    <Card className="h-full overflow-hidden">
+    <Card className="h-full overflow-hidden rounded">
       <CardHeader>
         <CardTitle className="flex flex-row items-center justify-between">
           About Me
@@ -34,35 +34,31 @@ export default function AboutMeCard() {
           <AccordionItem value="item-1">
             <AccordionTrigger>Where do I work?</AccordionTrigger>
             <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
+              Currently I work at a company called BayWa AG.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger>What do I do?</AccordionTrigger>
             <AccordionContent>
-              Yes. It comes with default styles that matches the other
-              components&apos; aesthetic.
+              I develop AI solutions for various business units. My projects range from computer vision to natural language processing.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger>Whats my education?</AccordionTrigger>
             <AccordionContent>
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              I have a bachelors in Business and Economics, then I pivoted to Computer Science and I am currently getting my masters in Applied AI.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger>Whats do I do for fun?</AccordionTrigger>
             <AccordionContent>
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              I love to be outdoors with my dog, I love to read and I love to code.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
             <AccordionTrigger>Where do I live?</AccordionTrigger>
             <AccordionContent>
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              I am currently living in Munich, Germany.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
